@@ -1,0 +1,13 @@
+{
+  "broker_id": "00",
+  "body": {
+    "code": "test"
+  },
+  "severyanochkaApi": true,
+  "city": "Донецк",
+  "name": "",
+  "wmid": "00000",
+  "department": "Donetsk",
+  "api": "",
+  "source_id": "000"
+}

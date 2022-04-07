@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="scroll-smooth" lang="{{ locale|default('ru') }}">
+	<head>
+		<meta charset="utf-8">
+		<link rel="dns-prefetch" href="https://identity.netlify.com">
+		<link rel="canonical" href="{{ site.rootUrl }}{{ page.url }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ envs.site.name }}</title>
+		<meta name="description" content="{{ description }}">
+		<meta name="keywords" content="{{ keywords }}">
+		<link rel="icon" type="image/svg+xml" href="{{ envs.site.faviconUrl | url }}">
+		<link rel="stylesheet" href="/assets/css/style.css">
+	</head>
+	<body
+		class="font-body body"
+		x-data="{
+			bodyLock : false,
+			scrollWidth: window.innerWidth - $refs.body.offsetWidth + 'px'
+		}"
+		:class="bodyLock ? 'overflow-hidden' : ''"
+		:style="bodyLock ? 'padding-right:' + scrollWidth : ''"
+		x-ref="body"
+	>
+		{% include "partials/header/header.njk" %}
+		<main>
+			{{ content | safe }}
+		</main>
+		{% include "partials/footer/footer.njk" %}
+		<script defer src="/assets/js/manifest.js"></script>
+		<script defer src="/assets/js/vendor.js"></script>
+		<script defer src="/assets/js/app.js"></script>
+	</body>
+</html>

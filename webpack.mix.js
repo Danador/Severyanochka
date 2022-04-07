@@ -30,7 +30,7 @@ mix.extract([
 
 const arJsPage = [
     'src/js/app.js',
-    'src/js/admin/index.js'
+    // 'src/js/admin/index.js'
 ];
 
 const arCssPage = [

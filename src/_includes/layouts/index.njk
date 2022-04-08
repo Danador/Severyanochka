@@ -12,15 +12,7 @@
 		<link rel="stylesheet" href="/assets/css/style.css">
 	</head>
 	<body
-		class="font-body body"
-		x-data="{
-			bodyLock : false,
-			scrollWidth: window.innerWidth - $refs.body.offsetWidth + 'px'
-		}"
-		:class="bodyLock ? 'overflow-hidden' : ''"
-		:style="bodyLock ? 'padding-right:' + scrollWidth : ''"
-		x-ref="body"
-	>
+		class="bg-rum_swizzle">
 		{% include "partials/header/header.njk" %}
 		<main>
 			{{ content | safe }}

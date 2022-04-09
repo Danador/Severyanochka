@@ -1,0 +1,9 @@
+{% macro previewCard( img, title ) %}
+    <div class="w-full relative transition-all h-[144px] bg-center bg-cover bg-no-repeat rounded " style="background-image: url(/assets/images/{{ img }}.jpg);">
+        <a href="#" class="relative block h-full transition-all duration-700 rounded before:absolute before:indent-0 bg-gradient-to-t md:hover:bg-gradient-to-t from-mantis/80 to-mantis/0 md:hover:bg-outrageous_orange/30">  
+            <span class="absolute bottom-2.5 left-2.5 font-bold text-m-d text-white">{{ title }}</span>
+        </a>
+    </div>
+{% endmacro %}
+
+{# {% if loop.first %} col-span-2 {% endif %} {% if loop.index===10 %} col-span-2 {% endif %} {% if loop.last %} col-span-2 md:col-span-1 2xl:col-span-2 2xl:col-start-2 2xl:row-start-4 {% endif %} #}

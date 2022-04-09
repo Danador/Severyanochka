@@ -1,0 +1,59 @@
+{
+    "index" : [
+        {
+            "img" : "milk-product",
+            "title" : "Молоко, сыр, яйцо",
+            "loop" : true
+        },
+        {
+            "img" : "bread",
+            "title" : "Хлеб"
+        },
+        {
+            "img" : "vegetables",
+            "title" : "Фрукты и овощи"
+        },
+        {
+            "img" : "frozen-food",
+            "title" : "Замороженные продукты"
+        },
+        {
+            "img" : "drinks",
+            "title" : "Напитки"
+        },
+        {
+            "img" : "confectionery",
+            "title" : "Кондитерские изделия"
+        },
+        {
+            "img" : "tea-cofee",
+            "title" : "Чай, кофе"
+        },
+        {
+            "img" : "grocery",
+            "title" : "Бакалея"
+        },
+        {
+            "img" : "healthy-eating",
+            "title" : "Здоровое питание"
+        },
+        {
+            "img" : "pet-supplies",
+            "title" : "Зоотовары",
+            "loop" : true
+        },
+        {
+            "img" : "baby-food",
+            "title" : "Детское питание"
+        },
+        {
+            "img" : "non-food-items",
+            "title" : "Непродовольственные товары"
+        },
+        {
+            "img" : "meat",
+            "title" : "Мясо, птица, колбаса",
+            "loop" : true
+        }
+    ]
+}

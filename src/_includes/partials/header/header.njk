@@ -1,5 +1,81 @@
-<header>
-    <div>
-        Магазин
+{% set navHeader= [
+        {
+            iconName: "like",
+            title: "Избранное"
+        },
+        {
+            iconName: "box",
+            title: "Заказы"
+        },
+        {
+            iconName: "food-basket",
+            title: "Корзина"
+        }
+    ] 
+%}
+
+<header class="bg-white">
+    <div class="container py-4 mx-auto px-28">
+        <div class="grid grid-flow-col max-w-max gap-x-10">
+            <!-- Логотип -->
+            <a href="/">
+                <svg class="w-[152px] h-8">
+                    <use xlink:href="/assets/icons/logo.svg#logo-full"></use>
+                </svg>
+            </a>
+
+            <!-- Каталог и поиск -->
+            <div class="grid items-center grid-flow-col gap-x-4 max-w-max">
+                <button class="grid p-2 rounded grid-cols-a1 gap-x-2 max-w-max bg-mantis">
+                    <div class="p-0.5 flex items-center justify-center w-6 h-6">
+                        <span class="relative w-full h-[1px] bg-white rounded before:absolute before:-top-[6px] before:w-full before:h-[2px] before:rounded before:left-0 before:bg-white after:absolute after:top-[6px] after:w-full after:h-[2px] after:rounded after:left-0 after:bg-white"></span>
+                    </div>
+                    <div class="w-full text-center text-white">
+                        <span class="text-s-d">Каталог</span>
+                    </div>
+                </button>
+                <form action="#">
+                    <label class="grid px-4 py-2 rounded w-96 grid-cols-1a ring-1 ring-mantis">
+                        <input 
+                        type="text"
+                        placeholder="Найти товар" 
+                        class="w-full transition-all duration-300 outline-none peer placeholder:text-gray focus:placeholder:opacity-0" 
+                        >
+                        <svg class="w-6 h-6 transition-all duration-300 peer-focus:text-mantis text-tundora">
+                            <use xlink:href="/assets/icons/all-icons.svg#search"></use>
+                        </svg>
+                    </label>
+                </form>
+            </div>
+
+            <!-- Навигация и аккаунт  -->
+            <nav class="grid items-center grid-cols-2 py-3 -my-4 gap-x-10">
+                <ul class="grid grid-flow-col max-w-max gap-x-6">
+                    {% for item in navHeader %}
+                        <li>
+                            <a href="#" class="flex flex-col items-center justify-between text-tundora">
+                                <svg class="w-6 h-6">
+                                    <use xlink:href="/assets/icons/all-icons.svg#{{ item.iconName }}"></use>
+                                </svg>
+                                <span class="text-xs-d">{{ item.title }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="flex items-center justify-between py-2 text-tundora">
+                    <div class="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full">
+                        <svg class="w-6 h-6">
+                            <use xlink:href="/assets/icons/all-icons.svg#profile"></use>
+                        </svg>
+                    </div>
+                    <span>Аккаунт</span>
+                    <button class="flex items-center justify-center w-10 h-10 transition-all duration-300 rounded-full hover:text-white hover:bg-black">
+                        <svg class="w-6 h-6">
+                            <use xlink:href="/assets/icons/all-icons.svg#arrow-bottom"></use>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </div>
 </header>

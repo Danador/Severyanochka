@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="search" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 10.5a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm8-7a7 7 0 1 0 0 14 7 7 0 0 0 0-14Z" fill="currentColor"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.446 15.446a.5.5 0 0 1 .707 0l5.2 5.2a.5.5 0 0 1-.707.707l-5.2-5.2a.5.5 0 0 1 0-.707Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="like" viewBox="0 0 25 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.205 4.256a6 6 0 1 1 8.487 8.487l-8.84 8.84a.5.5 0 0 1-.707 0l-8.84-8.84a6.001 6.001 0 1 1 8.487-8.487l.706.707.707-.707Zm4.243-.758a5 5 0 0 0-3.536 1.465l-1.06 1.06a.5.5 0 0 1-.707 0l-1.06-1.06a5.001 5.001 0 1 0-7.073 7.073l8.486 8.487 8.487-8.487a5 5 0 0 0-3.537-8.538Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="box" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="m11.332 1.898-7.998 4h-.001A1.5 1.5 0 0 0 2.5 7.24v9.524a1.5 1.5 0 0 0 .824 1.349l8 4a1.5 1.5 0 0 0 1.342 0l8-4h.002a1.5 1.5 0 0 0 .832-1.343V7.24a1.5 1.5 0 0 0-.832-1.342h-.002l-7.998-4a1.502 1.502 0 0 0-1.335 0Zm-.445-.896a2.5 2.5 0 0 1 2.226 0l8 4A2.5 2.5 0 0 1 22.5 7.24v9.53a2.5 2.5 0 0 1-1.387 2.237l-8 4a2.5 2.5 0 0 1-2.237 0l-8-4A2.5 2.5 0 0 1 1.5 16.758V7.24a2.5 2.5 0 0 1 1.387-2.237l8-4Z" fill="currentColor"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.873 5.936a.5.5 0 0 1 .671-.223L12 10.44l9.457-4.728a.5.5 0 1 1 .447.894l-9.68 4.84a.5.5 0 0 1-.447 0l-9.68-4.84a.5.5 0 0 1-.224-.67Z" fill="currentColor"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.5a.5.5 0 0 1 .5.5v11.76a.5.5 0 0 1-1 0V11a.5.5 0 0 1 .5-.5ZM6.553 3.276a.5.5 0 0 1 .67-.223l10 5a.5.5 0 1 1-.447.894l-10-5a.5.5 0 0 1-.223-.67Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="food-basket" viewBox="0 0 25 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 21a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Zm2.5-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM18 21a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Zm2.5-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM1.5.5a.5.5 0 0 0 0 1h3.58c.758 4.291 1.523 8.564 2.17 12.87a2.5 2.5 0 0 0 2.472 2.13H19.86a2.5 2.5 0 0 0 2.451-2.01l1.44-7.196A1.5 1.5 0 0 0 22.278 5.5H7.66a1.49 1.49 0 0 0-.816.24L5.992.914A.5.5 0 0 0 5.5.5h-4Zm5.666 6.574A.5.5 0 0 1 7.66 6.5h14.62a.5.5 0 0 1 .49.598l-1.44 7.196a1.5 1.5 0 0 1-1.47 1.206H9.722a1.5 1.5 0 0 1-1.484-1.277L7.166 7.074Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="profile" viewBox="0 0 32 32" fill="none">
+        <path class="cls-1" d="M16 17a8 8 0 1 1 8-8 8 8 0 0 1-8 8Zm0-14a6 6 0 1 0 6 6 6 6 0 0 0-6-6ZM23 31H9a5 5 0 0 1-5-5v-4a1 1 0 0 1 .49-.86l5-3a1 1 0 0 1 1 1.72L6 22.57V26a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-3.43l-4.51-2.71a1 1 0 1 1 1-1.72l5 3A1 1 0 0 1 28 22v4a5 5 0 0 1-5 5Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="arrow-bottom" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.646 8.646a.5.5 0 0 1 .708 0L12 14.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708Z" fill="currentColor"/>
+    </symbol>
+</svg>

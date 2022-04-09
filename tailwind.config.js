@@ -47,7 +47,7 @@ module.exports = {
         'silver':'#BFBFBF',
         'dodger_blue' : '#1CB9FC',
         'outrageous_orange':'#FF6633',
-        'gray':'#8F8F8F',
+        'special-gray':'#8F8F8F',
         'tree_poppy':'#FCA21C',
         'mantis':'#70C05B',
         'scorpion':'#606060',

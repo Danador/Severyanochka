@@ -14,28 +14,30 @@
     ] 
 %}
 
-<header class="bg-white">
-    <div class="container py-4 mx-auto px-28">
-        <div class="grid items-center grid-flow-col max-w-max gap-x-10">
+<header class="sticky top-0 z-50 bg-white">
+    <div class="container px-3 py-4 mx-auto md:px-4 lx:px-8 xl:px-20 2xl:px-28">
+        <div class="grid items-center w-full grid-cols-a1 md:grid-cols-a1a gap-x-6 md:gap-x-10">
             <!-- Логотип -->
             <a href="/">
-                <svg class="w-[152px] h-8">
-                    <use xlink:href="/assets/icons/logo.svg#logo-full"></use>
+                <svg class="h-8 w-10 md:h-10 md:w-12 2xl:w-[152px] 2xl:h-8">
+                    <use class="hidden 2xl:block" xlink:href="/assets/icons/logo.svg#logo-full"></use>
+                    <use class="2xl:hidden" xlink:href="/assets/icons/logo.svg#logo-mini"></use>
                 </svg>
+                
             </a>
 
             <!-- Каталог и поиск -->
-            <div class="grid items-center grid-flow-col gap-x-4 max-w-max">
-                <button class="grid p-2 rounded grid-cols-a1 gap-x-2 max-w-max bg-mantis">
+            <div class="w-full md:grid md:items-center md:grid-cols-a1 md:gap-x-4">
+                <button class="hidden p-2 rounded md:block 2xl:grid grid-cols-a1 2xl:gap-x-2 max-w-max bg-mantis">
                     <div class="p-0.5 flex items-center justify-center w-6 h-6">
                         <span class="relative w-full h-[1px] bg-white rounded before:absolute before:-top-[6px] before:w-full before:h-[2px] before:rounded before:left-0 before:bg-white after:absolute after:top-[6px] after:w-full after:h-[2px] after:rounded after:left-0 after:bg-white"></span>
                     </div>
-                    <div class="w-full text-center text-white">
+                    <div class="hidden w-full text-center text-white 2xl:block">
                         <span class="text-s-d">Каталог</span>
                     </div>
                 </button>
-                <form action="#">
-                    <label class="grid px-4 py-2 rounded w-96 grid-cols-1a ring-1 ring-mantis">
+                <form action="#" class="w-full">
+                    <label class="grid px-4 py-2 rounded 2xl:w-full 2xl:max-w-none grid-cols-1a ring-1 ring-mantis">
                         <input 
                         type="text"
                         placeholder="Найти товар" 
@@ -49,8 +51,8 @@
             </div>
 
             <!-- Навигация и аккаунт  -->
-            <nav class="grid items-center grid-cols-2 py-3 -my-4 gap-x-10">
-                <ul class="grid grid-flow-col max-w-max gap-x-6">
+            <nav class="items-center hidden w-full grid-flow-col py-3 -my-4 md:grid lg:grid-cols-2 gap-x-10">
+                <ul class="grid justify-center grid-flow-col mx-auto max-w-max gap-x-6">
                     {% for item in navHeader %}
                         <li>
                             <a href="#" class="flex flex-col items-center justify-between text-tundora">
@@ -62,19 +64,19 @@
                         </li>
                     {% endfor %}
                 </ul>
-                <div class="flex items-center justify-between py-2 text-tundora">
+                <button class="py-2 ml-auto mr-0 w-max 2xl:w-full 2xl:flex 2xl:items-center 2xl:justify-between text-tundora">
                     <div class="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full">
                         <svg class="w-6 h-6">
                             <use xlink:href="/assets/icons/all-icons.svg#profile"></use>
                         </svg>
                     </div>
-                    <span>Аккаунт</span>
-                    <button class="flex items-center justify-center w-10 h-10 transition-all duration-300 rounded-full hover:text-white hover:bg-black">
+                    <span class="hidden 2xl:block">Аккаунт</span>
+                    <div class="items-center justify-center hidden w-10 h-10 transition-all duration-300 rounded-full 2xl:flex hover:text-white hover:bg-black">
                         <svg class="w-6 h-6">
                             <use xlink:href="/assets/icons/all-icons.svg#arrow-bottom"></use>
                         </svg>
-                    </button>
-                </div>
+                    </div>
+                </button>
             </nav>
         </div>
     </div>

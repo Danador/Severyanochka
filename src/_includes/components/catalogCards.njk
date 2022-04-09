@@ -1,7 +1,7 @@
 {% macro previewCard( img, title ) %}
     <div class="w-full relative transition-all h-[144px] bg-center bg-cover bg-no-repeat rounded " style="background-image: url(/assets/images/{{ img }}.jpg);">
-        <a href="#" class="relative block h-full transition-all duration-700 rounded before:absolute before:indent-0 bg-gradient-to-t md:hover:bg-gradient-to-t from-mantis/80 to-mantis/0 md:hover:bg-outrageous_orange/30">  
-            <span class="absolute bottom-2.5 left-2.5 font-bold text-m-d text-white">{{ title }}</span>
+        <a href="#" class="flex items-end h-full p-5 transition-all duration-700 rounded before:absolute before:indent-0 bg-gradient-to-t md:hover:bg-gradient-to-t from-mantis/80 to-mantis/0 md:hover:bg-outrageous_orange/30">  
+            <p class="font-bold text-white text-m-d">{{ title }}</p>
         </a>
     </div>
 {% endmacro %}

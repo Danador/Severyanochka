@@ -45,7 +45,7 @@ module.exports = {
         'tundora':'#414141',
         'silver':'#BFBFBF',
         'dodger-blue' : '#1CB9FC',
-        'outrageous_orange':'#FF6633',
+        'outrageous-orange':'#FF6633',
         'special-gray':'#8F8F8F',
         'tree-poppy':'#FCA21C',
         'mantis':'#70C05B',

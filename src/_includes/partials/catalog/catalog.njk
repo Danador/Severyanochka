@@ -1,7 +1,8 @@
 {% from "components/catalogCards.njk" import previewCard %}
+{% from "components/catalogCards.njk" import productCard %}
 
 <section>
-    <div class="container px-3 mx-auto md:px-4 lx:px-8 xl:px-20 2xl:px-28">
+    {# <div class="container px-3 mx-auto md:px-4 lx:px-8 xl:px-20 2xl:px-28">
         <div class="pb-8">
             <h1 class="text-xl-d">Каталог</h1>
         </div>
@@ -15,5 +16,6 @@
                 }}
             {% endfor %}
         </div>
-    </div>
+    </div> #}
+    {{ productCard() }}
 </section>

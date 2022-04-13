@@ -8,10 +8,17 @@
         </div>
         <div class="grid w-full grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-y-3 gap-x-4">
             {% for item in catalog.index %}
+                {% if loop.index===10 %}
+                    {% set colspan2 = true %}
+                {% else %}
+                    {% set colspan2 = false %}
+                {% endif %}
                 {{
                     previewCard(
                         img = item.img,
-                        title = item.title
+                        title = item.title,
+                        colspan2 = colspan2,
+                        class = "first:col-span-2 last:col-span-2 last:md:col-span-1 last:2xl:col-span-2 last:2xl:col-start-2 last:2xl:row-start-4"
                     )
                 }}
             {% endfor %}

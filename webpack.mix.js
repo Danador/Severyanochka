@@ -43,6 +43,6 @@ arCssPage.forEach(sCssPage => mix.postCss(sCssPage, 'assets/css'));
 
 mix.disableNotifications();
 
-if (!mix.inProduction()) {
-    mix.bundleAnalyzer();
-}
+// if (!mix.inProduction()) {
+//     mix.bundleAnalyzer();
+// }

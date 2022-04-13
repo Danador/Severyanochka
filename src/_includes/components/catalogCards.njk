@@ -1,12 +1,10 @@
-{% macro previewCard( img, title ) %}
-    <div class="w-full relative transition-all h-[144px] bg-center bg-cover bg-no-repeat rounded " style="background-image: url(/assets/images/{{ img }}.jpg);">
-        <a href="#" class="flex items-end h-full p-5 transition-all duration-700 rounded before:absolute before:indent-0 bg-gradient-to-t md:hover:bg-gradient-to-t from-mantis/80 to-mantis/0 md:hover:bg-outrageous_orange/30">  
-            <p class="font-bold text-white text-m-d">{{ title }}</p>
+{% macro previewCard( class, img, title, colspan2 ) %}
+    <div class="{{ class }}{% if colspan2 %} col-span-2 {% endif %} w-full relative transition-all h-[144px] bg-center bg-cover bg-no-repeat rounded" style="background-image: url(/assets/images/{{ img }}.jpg);">
+        <a href="#" class="flex items-end h-full p-2.5 transition-all duration-500 rounded before:absolute before:indent-0 bg-gradient-to-t md:hover:bg-gradient-to-t from-mantis/80 to-mantis/0 md:hover:bg-outrageous_orange/30">  
+            <p class="text-xs font-bold text-white md:text-m-d">{{ title }}</p>
         </a>
     </div>
 {% endmacro %}
-
-{# {% if loop.first %} col-span-2 {% endif %} {% if loop.index===10 %} col-span-2 {% endif %} {% if loop.last %} col-span-2 md:col-span-1 2xl:col-span-2 2xl:col-start-2 2xl:row-start-4 {% endif %} #}
 
 {% macro productCard() %}
     <div class="max-w-[270px] grid grid-rows-a1a px-2 pb-2 h-[350px] drop-shadow-default_xs bg-white">

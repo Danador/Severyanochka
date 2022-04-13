@@ -3,18 +3,6 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ['./src/**/*.{htm,md,njk}'],
   theme: {
-    fontSize: {
-      'xs-d': ['12px', '18px'],
-      's-d': ['16px', '24px'],
-      'm-d': ['18px', '27px'],
-      'l-d': ['24px', '36px'],
-      'xl-d': ['36px', '54px'],
-      'xs-m': ['8px', '12px'],
-      's-m': ['12px', '18px'],
-      'm-m': ['14px', '21px'],
-      'l-m': ['20px', '30px'],
-      'xl-m': ['32px', '48px'],
-    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -23,6 +11,18 @@ module.exports = {
       '2xl':'1440px',
     },
     extend: {
+      fontSize: {
+        'xs-d': ['12px', '18px'],
+        's-d': ['16px', '24px'],
+        'm-d': ['18px', '27px'],
+        'l-d': ['24px', '36px'],
+        'xl-d': ['36px', '54px'],
+        'xs-m': ['8px', '12px'],
+        's-m': ['12px', '18px'],
+        'm-m': ['14px', '21px'],
+        'l-m': ['20px', '30px'],
+        'xl-m': ['32px', '48px'],
+      },
       fontFamily: {
       },
       letterSpacing: {
@@ -54,7 +54,6 @@ module.exports = {
         'rice-flower':'#E5FFDE',
         'apricot-peach':'#FCD5BA',
         'your-pink':'#FFC7C7',
-
       },
       gridTemplateRows: {
         'aa1': 'repeat(2, auto) 1fr',

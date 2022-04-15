@@ -33,53 +33,101 @@
         }
     ] 
 %}
-<footer class="bg-rum-swizzle">
-    <!-- <svg class="w-full h-[100px]">
-        <use xlink:href="/assets/icons/all-icons.svg#footer"></use>
-    </svg> -->
-    <div class="container px-3 py-10 mx-auto md:py-6 md:px-4 lx:px-8 xl:px-20 2xl:px-28">
-        <div class="flex items-center justify-between">
-            <svg class="w-24 h-16 md:w-16 md:h-11">
-                <use xlink:href="/assets/icons/logo.svg#logo-round"></use>
-            </svg>
-            <div class="grid gap-y-4">
-                <div class="grid items-center grid-cols-4 gap-x-4">
-                    <a href="#">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 2H8.25C4.79875 2 2 4.79875 2 8.25V15.75C2 19.2013 4.79875 22 8.25 22H15.75C19.2013 22 22 19.2013 22 15.75V8.25C22 4.79875 19.2013 2 15.75 2ZM20.125 15.75C20.125 18.1625 18.1625 20.125 15.75 20.125H8.25C5.8375 20.125 3.875 18.1625 3.875 15.75V8.25C3.875 5.8375 5.8375 3.875 8.25 3.875H15.75C18.1625 3.875 20.125 5.8375 20.125 8.25V15.75ZM12.0002 7.2002C9.34939 7.2002 7.2002 9.34939 7.2002 12.0002C7.2002 14.651 9.34939 16.8002 12.0002 16.8002C14.651 16.8002 16.8002 14.651 16.8002 12.0002C16.8002 9.34939 14.651 7.2002 12.0002 7.2002ZM12.0002 15.0002C10.3466 15.0002 9.0002 13.6538 9.0002 12.0002C9.0002 10.3454 10.3466 9.0002 12.0002 9.0002C13.6538 9.0002 15.0002 10.3454 15.0002 12.0002C15.0002 13.6538 13.6538 15.0002 12.0002 15.0002ZM17.9998 6.6C17.9998 6.93137 17.7312 7.2 17.3998 7.2C17.0684 7.2 16.7998 6.93137 16.7998 6.6C16.7998 6.26863 17.0684 6 17.3998 6C17.7312 6 17.9998 6.26863 17.9998 6.6Z" fill="url(#paint0_linear_23_2442)"/>
-                            <defs>
-                                <linearGradient id="paint0_linear_23_2442" x1="4.92912" y1="19.0709" x2="19.0709" y2="4.92912" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#FFC107"/>
-                                    <stop offset="0.507" stop-color="#F44336"/>
-                                    <stop offset="0.99" stop-color="#9C27B0"/>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </a>
-                    {% for item in icons %}
+
+{% set lowerMenu=[
+        {
+            title:"Каталог"
+        },
+        {
+            iconName:"heart-d",
+            title:"Избранное"
+        },
+        {
+            iconName:"box",
+            title:"Заказы"
+        },
+        {
+            iconName:"food-basket",
+            title:"Корзина"
+        },
+        {
+            iconName:"profile"
+        }
+    ] 
+%}
+<footer class="grid-in-footer">
+    <section class="bg-rum-swizzle-2">
+        <!-- <svg class="w-full h-[100px]">
+            <use xlink:href="/assets/icons/all-icons.svg#footer"></use>
+        </svg> -->
+        <div class="pt-10 mx-auto md:py-8 lg:container pb-7 px-7 md:px-4 lg:pt-6 lg:pb-10 xl:px-28">
+            <div class="grid items-center grid-cols-1a sm:gap-2 sm:grid-cols-a1a">
+                <svg class="w-24 h-16 md:w-16 md:h-11">
+                    <use xlink:href="/assets/icons/logo.svg#logo-round"></use>
+                </svg>
+                <div class="grid items-center gap-y-4 md:grid-flow-col gap-x-6 lg:gap-x-10 max-w-max">
+                    <div class="grid items-center grid-cols-4 md:grid-cols-2 lg:grid-cols-4 gap-x-4 max-w-max">
                         <a href="#">
-                            <svg class="w-6 h-6">
-                                <use xlink:href="/assets/icons/all-icons.svg#{{ item.icon }}"></use>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 2H8.25C4.79875 2 2 4.79875 2 8.25V15.75C2 19.2013 4.79875 22 8.25 22H15.75C19.2013 22 22 19.2013 22 15.75V8.25C22 4.79875 19.2013 2 15.75 2ZM20.125 15.75C20.125 18.1625 18.1625 20.125 15.75 20.125H8.25C5.8375 20.125 3.875 18.1625 3.875 15.75V8.25C3.875 5.8375 5.8375 3.875 8.25 3.875H15.75C18.1625 3.875 20.125 5.8375 20.125 8.25V15.75ZM12.0002 7.2002C9.34939 7.2002 7.2002 9.34939 7.2002 12.0002C7.2002 14.651 9.34939 16.8002 12.0002 16.8002C14.651 16.8002 16.8002 14.651 16.8002 12.0002C16.8002 9.34939 14.651 7.2002 12.0002 7.2002ZM12.0002 15.0002C10.3466 15.0002 9.0002 13.6538 9.0002 12.0002C9.0002 10.3454 10.3466 9.0002 12.0002 9.0002C13.6538 9.0002 15.0002 10.3454 15.0002 12.0002C15.0002 13.6538 13.6538 15.0002 12.0002 15.0002ZM17.9998 6.6C17.9998 6.93137 17.7312 7.2 17.3998 7.2C17.0684 7.2 16.7998 6.93137 16.7998 6.6C16.7998 6.26863 17.0684 6 17.3998 6C17.7312 6 17.9998 6.26863 17.9998 6.6Z" fill="url(#paint0_linear_23_2442)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_23_2442" x1="4.92912" y1="19.0709" x2="19.0709" y2="4.92912" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFC107"/>
+                                        <stop offset="0.507" stop-color="#F44336"/>
+                                        <stop offset="0.99" stop-color="#9C27B0"/>
+                                    </linearGradient>
+                                </defs>
                             </svg>
                         </a>
-                    {% endfor %}
+                        {% for item in icons %}
+                            <a href="#">
+                                <svg class="w-6 h-6">
+                                    <use xlink:href="/assets/icons/all-icons.svg#{{ item.icon }}"></use>
+                                </svg>
+                            </a>
+                        {% endfor %}
+                    </div>
+                    <div class="grid grid-cols-a1 text-tundora gap-x-2">
+                        <svg class="w-6 h-6">
+                            <use xlink:href="/assets/icons/all-icons.svg#phone"></use>
+                        </svg>
+                        <span class="text-s-d">8 800 777 33 33</span>
+                    </div>
                 </div>
-                <div class="grid grid-cols-a1 text-tundora gap-x-2">
-                    <svg class="w-6 h-6">
-                        <use xlink:href="/assets/icons/all-icons.svg#phone"></use>
-                    </svg>
-                    <span class="text-s-d">8 800 777 33 33</span>
+                <div class="col-span-2 row-start-2 mx-auto mt-6 max-w-max lg:max-w-none sm:mx-auto sm:mt-0 sm:col-auto sm:row-start-1 sm:col-start-2">
+                    <ul class="grid items-center grid-cols-4 text-center sm:gap-2 sm:text-left lg:grid-cols-none lg:grid-flow-col">
+                        {% for item in links %}
+                            <li class="{% if loop.index===4 %} row-auto sm:row-start-2 lg:row-auto {% endif %}{% if loop.last %} col-span-4 sm:col-span-3 lg:col-auto {% endif %}">
+                                <a class="hover:underline text-xs-d" href="{{ item.link }}">{{ item.linkText }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="mt-6">
-            <ul class="grid grid-cols-4 gap-4">
-                {% for item in links %}
-                    <li class="{% if loop.last %} mx-auto col-span-4 {% endif %}">
-                        <a class="hover:underline text-xs-d" href="{{ item.link }}">{{ item.linkText }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
+    </section>
+    <section class="sticky bottom-0 z-50 block bg-white sm:hidden">
+        <div class="grid items-center grid-flow-col px-4 py-2 justify-items-center gap-x-8 h-14">
+            {% for item in lowerMenu %}
+                <button class="flex flex-col items-center justify-between w-8 h-10 transition-all duration-300 text-xs-m group text-tundora active:text-outrageous-orange">
+                    {% if loop.index===1 %}
+                    <div class="p-0.5 flex items-center justify-center w-6 h-6">
+                        <span class="relative after:duration-300 after:transition-all before:duration-300 before:transition-all w-full h-[1px] bg-tundora group-active:bg-outrageous-orange group-active:before:bg-outrageous-orange group-active:after:bg-outrageous-orange transition-all duration-300 rounded before:absolute before:-top-[6px] before:w-full before:h-[2px] before:rounded before:left-0 before:bg-tundora after:absolute after:top-[6px] after:w-full after:h-[2px] after:rounded after:left-0 after:bg-tundora "></span>
+                    </div>
+                    {% elseif loop.last %}
+                        <span class="flex items-center justify-center w-10 h-10 transition-all rounded-full group-active:bg-gray-300">
+                            <svg class="w-6 h-6">
+                                <use xlink:href="/assets/icons/all-icons.svg#{{ item.iconName }}"></use>
+                            </svg>
+                        </span>
+                    {% else %}
+                        <svg class="w-6 h-6">
+                            <use xlink:href="/assets/icons/all-icons.svg#{{ item.iconName }}"></use>
+                        </svg>
+                    {% endif %}
+                    <span>{{ item.title }}</span>
+                </button>
+            {% endfor %}
         </div>
-    </div>
+    </section>
 </footer>

@@ -38,6 +38,7 @@ module.exports = {
       colors: {
         inherit: 'inherit',
         'rum-swizzle' : '#FBF8EC',
+        'rum-swizzle-2': '#F9F4E2',
         'desert-storm-1' : '#F4F4F2',
         'mikado' : '#291E0F',
         'desert-storm-2' : '#F3F2F1',
@@ -62,6 +63,8 @@ module.exports = {
         '1a1': '1fr auto 1fr',
         'a1a': 'auto 1fr auto',
         '1aa': '1fr repeat(2, auto)',
+        full: '100%',
+        'layout': 'auto 1fr auto',
       },
       gridTemplateColumns: {
         'aa1': 'repeat(2, auto) 1fr',
@@ -70,10 +73,11 @@ module.exports = {
         '1a1': '1fr auto 1fr',
         'a1a': 'auto 1fr auto',
         '1aa': '1fr repeat(2, auto)',
+        full: '100%',
       },
       textShadow: {
       },
-      dropShadow: {
+      boxShadow: {
         'default_xs': '1px 2px 4px rgba(0, 0, 0, 0.1)',
         'default_s': '2px 4px 8px rgba(0, 0, 0, 0.1)',
         'default_m': '14px 8px 16px rgba(0, 0, 0, 0.1)',
@@ -88,7 +92,8 @@ module.exports = {
         'secondary_s': '2px 4px 8px rgba(112, 192, 91, 0.2)',
         'secondary_m': '4px 8px 16px rgba(112, 192, 91, 0.2)',
         'secondary_l': '8px 16px 32px rgba(112, 192, 91, 0.2)',
-        'secondary_xl': '16px 32px 64px rgba(112, 192, 91, 0.2)', 
+        'secondary_xl': '16px 32px 64px rgba(112, 192, 91, 0.2)',
+        'default-b': '4px 8px 16px 0px rgba(112, 192, 91, 0.2)',
       },
     },
   },

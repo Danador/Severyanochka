@@ -1,3 +1,5 @@
+{% from "components/buttons.njk" import default %}
+
 {% macro previewCard( class, img, title, colspan2 ) %}
     <div class="{{ class }}{% if colspan2 %} col-span-2 {% endif %} w-full relative transition-all h-[144px] bg-center bg-cover bg-no-repeat rounded" style="background-image: url(/assets/images/{{ img }}.jpg);">
         <a href="#" class="flex items-end h-full p-2.5 transition-all duration-500 rounded before:absolute before:indent-0 bg-gradient-to-t md:hover:bg-gradient-to-t from-mantis/80 to-mantis/0 md:hover:bg-outrageous_orange/30">  
@@ -6,24 +8,23 @@
     </div>
 {% endmacro %}
 
-{% macro productCard() %}
+{% macro productCard( image, price, description ) %}
     <div class="max-w-[270px] grid grid-rows-a1a px-2 pb-2 h-[350px] drop-shadow-default_xs bg-white">
         <div class="w-full relative max-h-[160px]">
-            <img class="max-w-[160px] mx-auto max-h-[160px]" src="/assets/images/dorblue.jpg" alt="залупа-ебаная">
-            <button class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 mt-2 mr-2 rounded hover:bg-red-500/40 bg-desert-storm-2">
-                <svg class="absolute w-4 h-4 text-outrageous-orange">
-                    <use xlink:href="/assets/icons/all-icons.svg#heart"></use>
+            <img class="max-w-[160px] mx-auto max-h-[160px]" src="/assets/images/{{ image }}.jpg" alt="залупа-ебаная">
+            <button class="absolute flex items-center justify-center w-8 h-8 rounded top-2 right-2 hover:bg-red-500/40 bg-desert-storm-2">
+                <svg class="w-4 h-4 text-tundora/50">
+                    <use xlink:href="/assets/icons/all-icons.svg#heart-d"></use>
                 </svg>
             </button>
         </div>
         <div>
             <a href="#">
                 <div class="mb-6">
-                    <span class="font-bold text-m-d text-tundora dark:text-white">139,99₽</span>
+                    <span class="font-bold text-m-d text-tundora dark:text-white">{{ price }} ₽</span>
                 </div>
                 <div class="grid">
-                    <p class="font-semibold tracking-tight text-s-d text-tundora dark:text-white">Комбайн КЗС-1218 </p>
-                    <p class="font-semibold tracking-tight text-s-d text-tundora dark:text-white">«ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                    <p class="font-semibold tracking-tight text-s-d text-tundora dark:text-white">{{ description }}</p>
                 </div>
             </a>
             <div class="flex items-center mt-4 mb-2">
@@ -33,7 +34,11 @@
                     </svg>
                 {% endfor %}
             </div>
-            <button class="grid justify-center h-10 pt-2 text-sm font-medium bg-white rounded text-mantis w-60 ring-mantis ring-1">В корзину</button>
         </div>
+        {{
+            default(
+                text="жопа"
+            )
+        }}
     </div>
 {% endmacro %}

@@ -11,10 +11,9 @@
 		<link rel="icon" type="image/svg+xml" href="{{ envs.site.faviconUrl | url }}">
 		<link rel="stylesheet" href="/assets/css/style.css">
 	</head>
-	<body
-		class="bg-rum_swizzle">
+	<body class="relative grid min-h-screen bg-rum-swizzle grid-areas-layout grid-cols-full grid-rows-layout">
 		{% include "partials/header/header.njk" %}
-		<main>
+		<main class="grid-in-main">
 			{{ content | safe }}
 		</main>
 		{% include "partials/footer/footer.njk" %}

@@ -1,0 +1,9 @@
+{% macro default( text, disabled ) %}
+    <button class="grid justify-center h-10 pt-2 text-sm transition-all duration-300 font-medium bg-white rounded ring-1 text-mantis w-60 ring-mantis 
+    {% if disabled %} disabled:bg-apricot-peach disabled:text-outrageous-orange {% endif %}
+    hover:bg-outrageous-orange hover:ring-outrageous-orange shadow-default-b shadow-transparent hover:shadow-outrageous-orange/20 hover:text-whites
+    "
+    >
+        <span>{{ text }}</span>
+    </button>
+{% endmacro %}

@@ -14,12 +14,12 @@
     ] 
 %}
 
-<header class="sticky top-0 z-50 bg-white">
-    <div class="container px-3 py-4 mx-auto md:px-4 lx:px-8 xl:px-20 2xl:px-28">
-        <div class="grid items-center w-full grid-cols-a1 md:grid-cols-a1a gap-x-6 md:gap-x-10">
+<header class="sticky top-0 z-50 bg-white grid-in-header">
+    <div class="container px-5 py-3 mx-auto sm:px-4 lx:px-8 xl:px-20 2xl:px-28">
+        <div class="grid items-center w-full grid-cols-a1 sm:grid-cols-a1a gap-x-6 sm:gap-x-10">
             <!-- Логотип -->
             <a href="/">
-                <svg class="h-8 w-10 md:h-10 md:w-12 2xl:w-[152px] 2xl:h-8">
+                <svg class="h-8 w-10 sm:h-10 sm:w-12 2xl:w-[152px] 2xl:h-8">
                     <use class="hidden 2xl:block" xlink:href="/assets/icons/logo.svg#logo-full"></use>
                     <use class="2xl:hidden" xlink:href="/assets/icons/logo.svg#logo-mini"></use>
                 </svg>
@@ -27,8 +27,8 @@
             </a>
 
             <!-- Каталог и поиск -->
-            <div class="w-full md:grid md:items-center md:grid-cols-a1 md:gap-x-4">
-                <button class="hidden p-2 rounded md:block 2xl:grid grid-cols-a1 2xl:gap-x-2 max-w-max bg-mantis">
+            <div class="w-full sm:grid sm:items-center sm:grid-cols-a1 sm:gap-x-4">
+                <button class="hidden p-2 rounded sm:block 2xl:grid grid-cols-a1 2xl:gap-x-2 max-w-max bg-mantis">
                     <div class="p-0.5 flex items-center justify-center w-6 h-6">
                         <span class="relative w-full h-[1px] bg-white rounded before:absolute before:-top-[6px] before:w-full before:h-[2px] before:rounded before:left-0 before:bg-white after:absolute after:top-[6px] after:w-full after:h-[2px] after:rounded after:left-0 after:bg-white"></span>
                     </div>
@@ -37,7 +37,7 @@
                     </div>
                 </button>
                 <form action="#" class="w-full">
-                    <label class="grid px-4 py-2 rounded 2xl:w-full 2xl:max-w-none grid-cols-1a ring-1 ring-mantis">
+                    <label class="grid px-4 py-2 rounded sm:px-2 md:px-4 2xl:w-full 2xl:max-w-none grid-cols-1a ring-1 ring-mantis">
                         <input 
                         type="text"
                         placeholder="Найти товар" 
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Навигация и аккаунт  -->
-            <nav class="items-center hidden w-full grid-flow-col py-3 -my-4 md:grid lg:grid-cols-2 gap-x-10">
+            <nav class="items-center hidden w-full grid-flow-col py-3 -my-4 sm:grid lg:grid-cols-1a gap-x-10">
                 <ul class="grid justify-center grid-flow-col mx-auto max-w-max gap-x-6">
                     {% for item in navHeader %}
                         <li>
@@ -64,7 +64,7 @@
                         </li>
                     {% endfor %}
                 </ul>
-                <button class="py-2 ml-auto mr-0 w-max 2xl:w-full 2xl:flex 2xl:items-center 2xl:justify-between text-tundora">
+                <button class="py-2 ml-auto mr-0 w-max 2xl:w-full 2xl:flex 2xl:space-x-2.5 2xl:items-center 2xl:justify-between text-tundora">
                     <div class="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full">
                         <svg class="w-6 h-6">
                             <use xlink:href="/assets/icons/all-icons.svg#profile"></use>

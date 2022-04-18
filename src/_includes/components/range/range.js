@@ -12,6 +12,10 @@ export default new class Range {
         max: 10000,
         minthumb: 0,
         maxthumb: 0,
+        init() {
+            this.mintrigger()
+            this.maxtrigger()
+        },
         mintrigger() {
                 
             this.minprice = Math.min(this.minprice, this.maxprice - 500);      

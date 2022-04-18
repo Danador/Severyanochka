@@ -2,7 +2,15 @@
 {% from "components/catalogCards.njk" import productCard %}
 
 <section>
-    {# <div class="container px-3 mx-auto md:px-4 lx:px-8 xl:px-20 2xl:px-28">
+
+    <div class="container px-3 mx-auto md:px-4 lx:px-8 xl:px-20 2xl:px-28">
+        <div class="flex items-center mt-6 space-x-2 text-gray-600 ">
+            <a href="/"class="underline">Главная</a>
+                <svg class="w-[7px] h-[13px] mt-1">
+                    <use xlink:href="/assets/icons/all-icons.svg#arrow"></use>
+                </svg>
+                <a href="/"class="hover:underline">Каталог</a>
+        </div>
         <div class="pb-8">
             <h1 class="text-xl-d">Каталог</h1>
         </div>
@@ -23,7 +31,7 @@
                 }}
             {% endfor %}
         </div>
-    </div> #}
+    </div>
     {{ 
         productCard(
             image="dorblue",

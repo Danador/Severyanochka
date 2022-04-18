@@ -1,0 +1,14 @@
+---
+title: Северяночка
+layout: layouts/index.njk
+scripts:
+    - /assets/js/catalog.js
+---
+{% from "components/range/range.njk" import range %}
+
+
+<section>
+    <div class="container mx-auto">
+        {{ range() }}
+    </div>
+</section>

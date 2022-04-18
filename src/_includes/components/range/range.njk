@@ -1,0 +1,51 @@
+
+{% macro range() %}
+    <div class="px-4 py-12">
+        <div class="lg:max-w-[452px] md:max-w-[343px] max-w-[343px] mx-auto container  px-4   ">
+            <div class="w-full py-6 mx-auto mb-3">
+                <p class="pb-2 text-xs font-medium leading-3 text-center text-gray-800">Price Range</p>
+                <p class="text-xs leading-3 text-center text-gray-600">Select your minimum and maximum price range</p>
+            </div>
+            <div class="flex items-center justify-center ">
+                <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative w-full max-w-xl">
+                    <div>
+                        <input 
+                        type="range"
+                            step="100"
+                            x-bind:min="min" x-bind:max="max"
+                            x-on:input="mintrigger"
+                            x-model="minprice"
+                            class="absolute z-20 w-full h-2 opacity-0 appearance-none cursor-pointer pointer-events-none"
+                        >
+                        <input 
+                            type="range" 
+                            step="100"
+                            x-bind:min="min" x-bind:max="max"
+                            x-on:input="maxtrigger"
+                            x-model="maxprice"
+                            class="absolute z-20 w-full h-2 opacity-0 appearance-none cursor-pointer pointer-events-none"
+                        >
+                        <div class="relative z-10 h-2">
+                            <div class="absolute top-0 bottom-0 left-0 right-0 z-10 bg-gray-200 rounded-md "></div>
+                            <div class="absolute top-0 bottom-0 z-20 bg-indigo-700 rounded-md " x-bind:style="'right:'+maxthumb+'%; left:'+minthumb+'%'"></div>
+                            <div class="absolute z-30 w-6 h-6 top-0 left-0 bg-indigo-700 rounded-full -mt-2 -ml-1 border-[6px] border-slate-50" x-bind:style="'left: '+minthumb+'%'"></div>
+                            <div class="absolute z-30 w-6 h-6 top-0 right-0 bg-indigo-700 rounded-full -mt-2 -mr-3 border-[6px] border-slate-50" x-bind:style="'right: '+maxthumb+'%'"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative flex items-center justify-between py-5">
+                        <div>
+                            <input type="text" maxlength="5" x-on:input="mintrigger" x-model="minprice" class="w-24 px-3 py-2 text-center bg-gray-100 rounded">
+                            <p class="absolute bottom-[28px] left-5">$</p>
+                        </div>
+                        <div>
+                            <input type="text" maxlength="5" x-on:input="maxtrigger" x-model="maxprice" class="w-24 px-3 py-2 text-center bg-gray-100 rounded">
+                            <p class="absolute bottom-[28px] right-[70px]">$</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
